@@ -4,11 +4,12 @@ replicaCount: 1
 
 profile: default
 
-namespace: default
+namespace: development
 
 image:
-  repository: zyseu/my-shellinabox-ubuntu
+  repository: acme
   tag: v1
+  pullPolicy: Always
 
 dockerRegistrySecret: regcred
 
