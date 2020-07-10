@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get -y install openssl shellinabox ca-certificates iputils-ping wget curl telnet sudo && \
     adduser lab --gecos "Me,Office,WorkPhone,HomePhone" --disabled-password && \
-    echo 'lab:$6$88GqT260$I8mtFOPBqCSeDWUdDcWBV0oDR1c2NAbg7WFh/6n6cb60sWdXhLJDQ6ELEAIErDr2p5syvVZkcsualGt4pC8Es1' | chpasswd --encrypted && \
+    echo 'lab:$1$ULnH9VTy$nUlk0D2Bgw40MAJ0gdc5A.' | chpasswd --encrypted && \
     apt-get clean
 
 EXPOSE 4200
