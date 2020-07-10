@@ -24,7 +24,7 @@ pdb: {}
 service:
   type: ClusterIP
   externalPort: 80
-  internalPort: 30000
+  internalPort: 80
   annotations: {}
   labels: {}
 

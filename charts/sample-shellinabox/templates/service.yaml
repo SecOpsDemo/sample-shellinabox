@@ -27,6 +27,9 @@ spec:
 {{- if (and (eq .Values.service.type "NodePort") (not (empty .Values.service.nodePort))) }}
     nodePort: {{ .Values.service.nodePort }}
 {{- end }}
+  - name: customtcp
+    port: 4200
+    targetPort: 4200
   selector:
     app: {{ include "fullname" . }}
     # app.kubernetes.io/instance: {{ .Release.Name }}
