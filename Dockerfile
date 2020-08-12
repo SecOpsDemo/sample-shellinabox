@@ -18,4 +18,4 @@ RUN apt-get update && \
 EXPOSE 4200
 
 # ENTRYPOINT ["shellinaboxd", "-s", "/:LOGIN", "--disable-ssl"]
-ENTRYPOINT ["shellinaboxd", "--debug", "-s", "/:LOGIN", "--disable-ssl"]
+ENTRYPOINT ["shellinaboxd", "--debug", "-s", "/:lab:lab:Lab123!", "--disable-ssl"]
